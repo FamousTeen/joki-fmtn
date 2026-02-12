@@ -16,7 +16,7 @@
 
         <!-- Content -->
         <div class="container-wide relative z-10">
-            <div class="max-w-3xl pb-10 text-center">
+            <div class="max-w-3xl sm:mt-5 md:mt-0 pb-10 text-center">
                 <!-- Badge -->
                 <div v-if="badge"
                     class="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-surface-800/80 border border-surface-700 backdrop-blur-sm animate-fade-in">

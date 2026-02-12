@@ -5,7 +5,7 @@ export default defineNuxtConfig({
 
   // Site URL for SEO
   site: {
-    url: "https://fmtn-pilot.vercel.app",
+    url: "https://fmtn-service.vercel.app",
     name: "FMTN's Pilot Service",
   },
 
@@ -40,10 +40,10 @@ export default defineNuxtConfig({
             "Professional game pilot services for your favorite gacha games.",
         },
         { property: "og:type", content: "website" },
-        { property: "og:url", content: "https://fmtn-pilot.vercel.app" },
+        { property: "og:url", content: "https://fmtn-service.vercel.app" },
         {
           property: "og:image",
-          content: "https://fmtn-pilot.vercel.app/og-image.png",
+          content: "https://fmtn-service.vercel.app/og-image.png",
         },
         { property: "og:image:width", content: "1200" },
         { property: "og:image:height", content: "630" },
@@ -62,7 +62,7 @@ export default defineNuxtConfig({
         },
         {
           name: "twitter:image",
-          content: "https://fmtn-pilot.vercel.app/og-image.png",
+          content: "https://fmtn-service.vercel.app/og-image.png",
         },
         // Additional SEO
         { name: "robots", content: "index, follow" },
@@ -75,7 +75,7 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-        { rel: "canonical", href: "https://fmtn-pilot.vercel.app" },
+        { rel: "canonical", href: "https://fmtn-service.vercel.app" },
       ],
     },
     pageTransition: { name: "page", mode: "out-in" },
@@ -94,8 +94,8 @@ export default defineNuxtConfig({
     identity: {
       type: "Organization",
       name: "FMTN's Pilot Service",
-      url: "https://fmtn-pilot.vercel.app",
-      logo: "https://fmtn-pilot.vercel.app/logo.png",
+      url: "https://fmtn-service.vercel.app",
+      logo: "https://fmtn-service.vercel.app/logo.png",
     },
   },
 

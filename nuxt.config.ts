@@ -5,7 +5,7 @@ export default defineNuxtConfig({
 
   // Site URL for SEO
   site: {
-    url: "https://fmtn-pilot.com",
+    url: "https://fmtn-pilot.vercel.app",
     name: "FMTN's Pilot Service",
   },
 
@@ -40,10 +40,10 @@ export default defineNuxtConfig({
             "Professional game pilot services for your favorite gacha games.",
         },
         { property: "og:type", content: "website" },
-        { property: "og:url", content: "https://fmtn-pilot.com" },
+        { property: "og:url", content: "https://fmtn-pilot.vercel.app" },
         {
           property: "og:image",
-          content: "https://fmtn-pilot.com/og-image.png",
+          content: "https://fmtn-pilot.vercel.app/og-image.png",
         },
         { property: "og:image:width", content: "1200" },
         { property: "og:image:height", content: "630" },
@@ -62,7 +62,7 @@ export default defineNuxtConfig({
         },
         {
           name: "twitter:image",
-          content: "https://fmtn-pilot.com/og-image.png",
+          content: "https://fmtn-pilot.vercel.app/og-image.png",
         },
         // Additional SEO
         { name: "robots", content: "index, follow" },
@@ -75,7 +75,7 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-        { rel: "canonical", href: "https://fmtn-pilot.com" },
+        { rel: "canonical", href: "https://fmtn-pilot.vercel.app" },
       ],
     },
     pageTransition: { name: "page", mode: "out-in" },
@@ -94,8 +94,8 @@ export default defineNuxtConfig({
     identity: {
       type: "Organization",
       name: "FMTN's Pilot Service",
-      url: "https://fmtn-pilot.com",
-      logo: "https://fmtn-pilot.com/logo.png",
+      url: "https://fmtn-pilot.vercel.app",
+      logo: "https://fmtn-pilot.vercel.app/logo.png",
     },
   },
 
@@ -129,14 +129,15 @@ export default defineNuxtConfig({
   // Runtime config for environment variables
   runtimeConfig: {
     public: {
-      googleFormUrl:
-        process.env.GOOGLE_FORM_URL || "https://forms.gle/your-form-id",
-      instagramHandle: process.env.INSTAGRAM_HANDLE || "fmtn_pilot",
+      hsrFormUrl: "https://bit.ly/formFmTnjoki",
+      zzzFormUrl: "https://bit.ly/formFmTnZZZjoki2",
+      instagramHandle: "jokibyfmtn",
     },
   },
 
-  // Nitro configuration for static generation
+  // Nitro configuration for Vercel
   nitro: {
+    preset: "vercel",
     prerender: {
       crawlLinks: true,
       routes: ["/"],

@@ -1,10 +1,10 @@
 <!-- components/GameSelector.vue -->
 <template>
     <div class="space-y-3">
-        <p class="text-sm font-medium text-surface-400 uppercase tracking-wider">
+        <p class="text-sm font-medium text-surface-400 uppercase tracking-wider text-center">
             Select a game
         </p>
-        <div class="flex flex-wrap gap-3" role="group" aria-label="Game selection">
+        <div class="flex flex-wrap justify-center gap-3" role="group" aria-label="Game selection">
             <NuxtLink v-for="game in games" :key="game.id" :to="`/games/${game.slug}`"
                 class="group relative flex items-center gap-3 px-5 py-3 rounded-xl bg-surface-800/50 border border-surface-700 hover:border-primary/50 hover:bg-surface-800 transition-all duration-300 hover:shadow-glow-sm"
                 :aria-label="`View ${game.name} services`">

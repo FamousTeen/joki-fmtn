@@ -1,6 +1,6 @@
 <!-- components/HeroBanner.vue -->
 <template>
-    <section class="relative min-h-[70vh] md:min-h-[80vh] flex items-center overflow-hidden" :class="[bgClass]"
+    <section class="relative min-h-[100vh] md:min-h-[90vh] flex items-center overflow-hidden" :class="[bgClass]"
         aria-labelledby="hero-title">
         <!-- Background layers -->
         <div class="absolute inset-0 bg-gradient-to-b from-transparent via-surface-950/50 to-surface-950"
@@ -16,7 +16,7 @@
 
         <!-- Content -->
         <div class="container-wide relative z-10">
-            <div class="max-w-3xl mx-auto mt-5 pb-10 text-center">
+            <div class="max-w-3xl pb-10 text-center">
                 <!-- Badge -->
                 <div v-if="badge"
                     class="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-surface-800/80 border border-surface-700 backdrop-blur-sm animate-fade-in">

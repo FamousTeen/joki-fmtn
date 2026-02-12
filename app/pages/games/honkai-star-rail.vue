@@ -245,20 +245,20 @@ useSeoMeta({
     ogTitle: 'Honkai: Star Rail Pilot Service | FMTN',
     ogDescription: 'Professional HSR pilot service. Daily commissions, weekly bosses, Memory of Chaos, Pure Fiction, and more.',
     ogType: 'website',
-    ogUrl: 'https://fmtn-pilot.com/games/honkai-star-rail',
-    ogImage: 'https://fmtn-pilot.com/og-hsr.png',
+    ogUrl: 'https://fmtn-pilot.vercel.app/games/honkai-star-rail',
+    ogImage: 'https://fmtn-pilot.vercel.app/og-hsr.png',
     ogImageWidth: '1200',
     ogImageHeight: '630',
     twitterCard: 'summary_large_image',
     twitterTitle: 'Honkai: Star Rail Pilot Service | FMTN',
     twitterDescription: 'Professional HSR pilot service. Daily commissions, weekly bosses, Memory of Chaos, Pure Fiction, and more.',
-    twitterImage: 'https://fmtn-pilot.com/og-hsr.png',
+    twitterImage: 'https://fmtn-pilot.vercel.app/og-hsr.png',
 })
 
 // Canonical URL
 useHead({
     link: [
-        { rel: 'canonical', href: 'https://fmtn-pilot.com/games/honkai-star-rail' }
+        { rel: 'canonical', href: 'https://fmtn-pilot.vercel.app/games/honkai-star-rail' }
     ]
 })
 
@@ -276,7 +276,7 @@ useSchemaOrg([
         provider: {
             '@type': 'Organization',
             name: "FMTN's Pilot Service",
-            url: 'https://fmtn-pilot.com',
+            url: 'https://fmtn-pilot.vercel.app',
         },
         areaServed: 'Worldwide',
         serviceType: 'Game Pilot Service',
@@ -284,7 +284,7 @@ useSchemaOrg([
 ])
 
 const config = useRuntimeConfig()
-const googleFormUrl = config.public.googleFormUrl as string
+const googleFormUrl = config.public.hsrFormUrl as string
 
 // Contact modal state
 const isContactModalOpen = ref(false)

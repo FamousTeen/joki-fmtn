@@ -81,20 +81,20 @@ useSeoMeta({
     ogTitle: "FMTN's Pilot Service | Professional Game Boosting",
     ogDescription: 'Professional game pilot services for your favorite gacha games.',
     ogType: 'website',
-    ogUrl: 'https://fmtn-pilot.com',
-    ogImage: 'https://fmtn-pilot.com/og-image.png',
+    ogUrl: 'https://fmtn-pilot.vercel.app',
+    ogImage: 'https://fmtn-pilot.vercel.app/og-image.png',
     ogImageWidth: '1200',
     ogImageHeight: '630',
     twitterCard: 'summary_large_image',
     twitterTitle: "FMTN's Pilot Service | Professional Game Boosting",
     twitterDescription: 'Professional game pilot services for your favorite gacha games.',
-    twitterImage: 'https://fmtn-pilot.com/og-image.png',
+    twitterImage: 'https://fmtn-pilot.vercel.app/og-image.png',
 })
 
 // Canonical URL
 useHead({
     link: [
-        { rel: 'canonical', href: 'https://fmtn-pilot.com' }
+        { rel: 'canonical', href: 'https://fmtn-pilot.vercel.app' }
     ]
 })
 
@@ -102,8 +102,8 @@ useHead({
 useSchemaOrg([
     defineOrganization({
         name: "FMTN's Pilot Service",
-        url: 'https://fmtn-pilot.com',
-        logo: 'https://fmtn-pilot.com/logo.png',
+        url: 'https://fmtn-pilot.vercel.app',
+        logo: 'https://fmtn-pilot.vercel.app/logo.png',
         sameAs: [
             'https://instagram.com/jokibyfmtn',
             'https://t.me/FamousTeen',
@@ -116,7 +116,7 @@ useSchemaOrg([
     }),
     defineWebSite({
         name: "FMTN's Pilot Service",
-        url: 'https://fmtn-pilot.com',
+        url: 'https://fmtn-pilot.vercel.app',
     }),
     defineWebPage({
         '@type': 'WebPage',
@@ -126,7 +126,6 @@ useSchemaOrg([
 ])
 
 const config = useRuntimeConfig()
-const googleFormUrl = config.public.googleFormUrl as string
 const instagramHandle = "jokibyfmtn"
 
 // Modal state
@@ -137,70 +136,6 @@ const games = [
     { id: 'hsr', name: 'Honkai: Star Rail', slug: 'honkai-star-rail', icon: '~/assets/Honkai_Star_Rail_Icon.png' },
     { id: 'zzz', name: 'Zenless Zone Zero', slug: 'zenless-zone-zero', icon: '~/assets/ZZZ_Icon.png' },
     { id: 'soon', name: 'Coming Soon', slug: 'coming-soon' },
-]
-
-// Services data
-const services = [
-    {
-        id: 'daily',
-        variant: 'daily' as const,
-        title: 'Daily Package',
-        description: 'Perfect for busy days. We handle your daily tasks efficiently.',
-        price: 15000,
-        pricePeriod: 'day',
-        features: [
-            'Daily commission completion',
-            'Stamina/energy usage',
-            'Event participation',
-            'Progress screenshots',
-            'Same-day completion',
-        ],
-        excludedFeatures: ['Weekly bosses', 'Story progression'],
-        ctaUrl: googleFormUrl,
-        ctaText: 'Order Daily',
-    },
-    {
-        id: 'weekly',
-        variant: 'weekly' as const,
-        title: 'Weekly Package',
-        description: 'Our most popular option. Complete weekly coverage for maximum value.',
-        price: 75000,
-        originalPrice: 105000,
-        discount: 29,
-        pricePeriod: 'week',
-        features: [
-            'Everything in Daily',
-            'Weekly boss clears',
-            'Shop resets handled',
-            'Limited event completion',
-            'Priority support',
-            'Detailed progress report',
-        ],
-        ctaUrl: googleFormUrl,
-        ctaText: 'Order Weekly',
-    },
-    {
-        id: 'patch',
-        variant: 'patch' as const,
-        title: 'Full Patch',
-        description: 'Ultimate convenience. Entire patch cycle handled from start to finish.',
-        price: 250000,
-        originalPrice: 315000,
-        discount: 21,
-        pricePeriod: 'patch (~6 weeks)',
-        features: [
-            'Everything in Weekly',
-            'New story content',
-            'All patch events',
-            'Character building advice',
-            'Pull optimization tips',
-            '24/7 priority support',
-            'Account optimization review',
-        ],
-        isPopular: true,
-        ctaUrl: googleFormUrl,
-        ctaText: 'Order Full Patch',
-    },
 ]
 
 // Features data

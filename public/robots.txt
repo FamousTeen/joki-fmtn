@@ -2,7 +2,7 @@ User-Agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://fmtn-pilot.com/sitemap.xml
+Sitemap: https://fmtn-pilot.vercel.app/sitemap.xml
 
 # Crawl-delay (optional, for polite crawlers)
 Crawl-delay: 1

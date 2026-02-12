@@ -221,20 +221,20 @@ useSeoMeta({
     ogTitle: 'Zenless Zone Zero Pilot Service | FMTN',
     ogDescription: 'Professional ZZZ pilot service. Daily commissions, Hollow Zero, Shiyu Defense, and all endgame content.',
     ogType: 'website',
-    ogUrl: 'https://fmtn-pilot.com/games/zenless-zone-zero',
-    ogImage: 'https://fmtn-pilot.com/og-zzz.png',
+    ogUrl: 'https://fmtn-pilot.vercel.app/games/zenless-zone-zero',
+    ogImage: 'https://fmtn-pilot.vercel.app/og-zzz.png',
     ogImageWidth: '1200',
     ogImageHeight: '630',
     twitterCard: 'summary_large_image',
     twitterTitle: 'Zenless Zone Zero Pilot Service | FMTN',
     twitterDescription: 'Professional ZZZ pilot service. Daily commissions, Hollow Zero, Shiyu Defense, and all endgame content.',
-    twitterImage: 'https://fmtn-pilot.com/og-zzz.png',
+    twitterImage: 'https://fmtn-pilot.vercel.app/og-zzz.png',
 })
 
 // Canonical URL
 useHead({
     link: [
-        { rel: 'canonical', href: 'https://fmtn-pilot.com/games/zenless-zone-zero' }
+        { rel: 'canonical', href: 'https://fmtn-pilot.vercel.app/games/zenless-zone-zero' }
     ]
 })
 
@@ -252,7 +252,7 @@ useSchemaOrg([
         provider: {
             '@type': 'Organization',
             name: "FMTN's Pilot Service",
-            url: 'https://fmtn-pilot.com',
+            url: 'https://fmtn-pilot.vercel.app',
         },
         areaServed: 'Worldwide',
         serviceType: 'Game Pilot Service',
@@ -260,7 +260,7 @@ useSchemaOrg([
 ])
 
 const config = useRuntimeConfig()
-const googleFormUrl = config.public.googleFormUrl as string
+const googleFormUrl = config.public.zzzFormUrl as string
 
 // Contact modal state
 const isContactModalOpen = ref(false)

@@ -50,7 +50,7 @@
                                     <p v-if="item.note" class="text-surface-500 text-xs mt-0.5">{{ item.note }}</p>
                                 </div>
                                 <div class="text-right">
-                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">{{
+                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">Rp {{
                                         formatPrice(item.price) }}</span>
                                     <p v-if="item.priceUsd" class="text-surface-500 text-xs">~${{ item.priceUsd }}</p>
                                 </div>
@@ -74,7 +74,7 @@
                                     <p v-if="item.note" class="text-surface-500 text-xs mt-0.5">{{ item.note }}</p>
                                 </div>
                                 <div class="text-right">
-                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">{{
+                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">Rp {{
                                         formatPrice(item.price) }}</span>
                                     <p v-if="item.priceUsd" class="text-surface-500 text-xs">~${{ item.priceUsd }}</p>
                                 </div>
@@ -98,7 +98,7 @@
                                     <p v-if="item.note" class="text-surface-500 text-xs mt-0.5">{{ item.note }}</p>
                                 </div>
                                 <div class="text-right">
-                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">{{
+                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">Rp {{
                                         formatPrice(item.price) }}</span>
                                     <p v-if="item.priceUsd" class="text-surface-500 text-xs">~${{ item.priceUsd }}</p>
                                 </div>
@@ -122,7 +122,7 @@
                                     <p v-if="item.note" class="text-surface-500 text-xs mt-0.5">{{ item.note }}</p>
                                 </div>
                                 <div class="text-right">
-                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">{{
+                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">Rp {{
                                         formatPrice(item.price) }}</span>
                                     <p v-if="item.priceUsd" class="text-surface-500 text-xs">~${{ item.priceUsd }}</p>
                                 </div>
@@ -146,7 +146,7 @@
                                     <p v-if="item.note" class="text-surface-500 text-xs mt-0.5">{{ item.note }}</p>
                                 </div>
                                 <div class="text-right">
-                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">{{
+                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">Rp {{
                                         formatPrice(item.price) }}</span>
                                     <p v-if="item.priceUsd" class="text-surface-500 text-xs">~${{ item.priceUsd }}</p>
                                 </div>
@@ -170,7 +170,7 @@
                                     <p v-if="item.note" class="text-surface-500 text-xs mt-0.5">{{ item.note }}</p>
                                 </div>
                                 <div class="text-right">
-                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">{{
+                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">Rp {{
                                         formatPrice(item.price) }}</span>
                                     <p v-if="item.priceUsd" class="text-surface-500 text-xs">~${{ item.priceUsd }}</p>
                                 </div>
@@ -403,8 +403,8 @@ const pricelistMap = [
     { name: 'Map Jarilo-VI', price: 30000, priceUsd: '5.6', note: 'Full exploration' },
     { name: 'Map Xianzhou Luofu', price: 60000, priceUsd: '11', note: 'Full exploration' },
     { name: 'Map Penacony', price: 170000, priceUsd: '32', note: '+ 6 side quests included' },
-    { name: 'Chest Collection', price: '2,000/5 chests', priceUsd: '0.4/5 Chests', note: 'Bulk collection' },
-    { name: 'Nymph/Bird Collection', price: '2,000/5 items', priceUsd: '0.4/5 items' },
+    { name: 'Chest Collection', price: '2.000/5 chests', priceUsd: '0.4/5 Chests', note: 'Bulk collection' },
+    { name: 'Nymph/Bird Collection', price: '2.000/5 items', priceUsd: '0.4/5 items' },
 ]
 
 // FAQs

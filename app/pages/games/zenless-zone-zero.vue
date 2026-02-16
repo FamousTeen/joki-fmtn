@@ -50,7 +50,7 @@
                                     <p v-if="item.note" class="text-surface-500 text-xs mt-0.5">{{ item.note }}</p>
                                 </div>
                                 <div class="text-right">
-                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">{{
+                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">Rp {{
                                         formatPrice(item.price) }}</span>
                                     <p v-if="item.priceUsd" class="text-surface-500 text-xs">~${{ item.priceUsd }}</p>
                                 </div>
@@ -74,7 +74,7 @@
                                     <p v-if="item.note" class="text-surface-500 text-xs mt-0.5">{{ item.note }}</p>
                                 </div>
                                 <div class="text-right">
-                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">{{
+                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">Rp {{
                                         formatPrice(item.price) }}</span>
                                     <p v-if="item.priceUsd" class="text-surface-500 text-xs">~${{ item.priceUsd }}</p>
                                 </div>
@@ -98,7 +98,7 @@
                                     <p v-if="item.note" class="text-surface-500 text-xs mt-0.5">{{ item.note }}</p>
                                 </div>
                                 <div class="text-right">
-                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">{{
+                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">Rp {{
                                         formatPrice(item.price) }}</span>
                                     <p v-if="item.priceUsd" class="text-surface-500 text-xs">~${{ item.priceUsd }}</p>
                                 </div>
@@ -122,7 +122,7 @@
                                     <p v-if="item.note" class="text-surface-500 text-xs mt-0.5">{{ item.note }}</p>
                                 </div>
                                 <div class="text-right">
-                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">{{
+                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">Rp {{
                                         formatPrice(item.price) }}</span>
                                     <p v-if="item.priceUsd" class="text-surface-500 text-xs">~${{ item.priceUsd }}</p>
                                 </div>
@@ -146,7 +146,7 @@
                                     <p v-if="item.note" class="text-surface-500 text-xs mt-0.5">{{ item.note }}</p>
                                 </div>
                                 <div class="text-right">
-                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">{{
+                                    <span class="text-primary font-semibold text-sm whitespace-nowrap">Rp {{
                                         formatPrice(item.price) }}</span>
                                     <p v-if="item.priceUsd" class="text-surface-500 text-xs">~${{ item.priceUsd }}</p>
                                 </div>
